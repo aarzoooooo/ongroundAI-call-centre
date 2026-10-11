@@ -1,0 +1,81 @@
+.ax { display: flex; flex-direction: column; min-height: calc(100vh - 62px); background: #fff; color: #14221f; }
+.ax button { font: inherit; cursor: pointer; }
+.ax p, .ax h1 { margin: 0; }
+
+.ax-head { display: flex; align-items: center; gap: 12px; padding: 10px 16px; background: var(--agent); color: #fff; }
+.ax-back { flex: none; width: 34px; height: 34px; border: 0; border-radius: 50%; background: rgba(255, 255, 255, 0.22); color: #fff; font-size: 16px; }
+.ax-title { flex: 1; min-width: 0; }
+.ax-title h1 { letter-spacing: 0; word-spacing: normal; display: flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 800; color: #fff; }
+.ax-title h1 span { letter-spacing: 0; padding: 1px 8px; border-radius: 8px; background: rgba(255, 255, 255, 0.25); font-size: 11px; font-weight: 700; }
+.ax-title p { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 12.5px; color: rgba(255, 255, 255, 0.92); }
+.ax-metric { flex: none; padding: 6px 14px; border-radius: 14px; background: rgba(255, 255, 255, 0.2); font-size: 13px; font-weight: 600; }
+.ax-metric b { font-size: 18px; font-weight: 800; }
+.ax-metric i { font-style: normal; font-weight: 800; }
+.ax-members { display: inline-flex; align-items: center; gap: 4px; flex: none; padding: 6px 10px; border-radius: 14px; background: rgba(255, 255, 255, 0.22); font-size: 13px; font-weight: 800; }
+
+.ax-period { padding: 8px 14px 10px; border-bottom: 1px solid #edf0f3; }
+.ax-period > p { font-size: 12px; color: #6b7685; }
+.ax-period > p strong { color: #14221f; }
+.ax-score { display: flex; align-items: flex-end; gap: 10px; margin-top: 4px; overflow-x: auto; }
+.ax-scope { flex: none; padding-bottom: 6px; font-size: 13px; font-weight: 800; color: #0f6b4f; }
+.ax-cell { flex: none; display: grid; gap: 2px; }
+.ax-cell small { font-size: 11px; font-weight: 800; letter-spacing: 0.04em; color: #6b7685; }
+.ax-pill { display: inline-flex; align-items: baseline; gap: 4px; padding: 4px 12px; border-radius: 14px; font-size: 12.5px; white-space: nowrap; }
+.ax-pill b { font-weight: 800; }
+.ax-pill strong { font-weight: 800; }
+.ax-pill.amber { background: #fdf1d6; color: #a15c07; }
+.ax-pill.red { background: #fde3e3; color: #b42318; }
+
+.ax-context { background: #e8f6ef; border-left: 3px solid var(--agent); }
+.ax-context-bar { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; width: 100%; padding: 10px 14px; border: 0; background: none; text-align: left; color: #0f6b4f; }
+.ax-context-title { font-size: 14px; font-weight: 800; }
+.ax-for-you { padding: 2px 8px; border-radius: 8px; background: #0f6b4f; color: #fff; font-size: 11px; font-weight: 800; }
+.ax-count { display: grid; place-items: center; min-width: 20px; height: 20px; border-radius: 10px; background: #e5484d; color: #fff; font-size: 12px; font-weight: 800; }
+.ax-context-note { flex: 1; font-size: 12.5px; color: #3b6b5a; }
+.ax-caret { transition: transform 0.15s; transform: rotate(180deg); }
+.ax-caret.open { transform: none; }
+
+.ax-context-body { padding: 0 14px 14px; background: #fff; }
+.ax-kicker { margin-top: 12px; font-size: 12.5px; font-weight: 800; letter-spacing: 0.03em; }
+.ax-sent { font-size: 12.5px; color: #6b7685; }
+.ax-big { margin-top: 6px; font-size: 13px; color: #6b7685; }
+.ax-big b { margin-right: 6px; font-size: 26px; font-weight: 800; }
+.ax-big b.red { color: #c81e1e; }
+.ax-line { margin-top: 6px; font-size: 13px; }
+.ax-good { margin-top: 4px; font-size: 13px; color: #0f7a4f; }
+.ax-improve { margin-top: 2px; font-size: 13px; color: #c2410c; }
+
+.ax-tasks { margin-top: 6px; overflow: hidden; border: 1px solid #f0e2bc; border-radius: 10px; }
+.ax-ack { display: flex; align-items: center; justify-content: space-between; padding: 10px 12px; background: #fdf3dc; }
+.ax-ack strong { font-size: 14px; color: #7a4a00; }
+.ax-ack button { padding: 5px 14px; border: 1px solid #d9b77a; border-radius: 8px; background: #fff; font-size: 13px; font-weight: 800; color: #7a4a00; }
+.ax-ack button:disabled { cursor: default; background: #e8f6ef; border-color: #b6dcc9; color: #0f6b4f; }
+.ax-task-list { display: grid; gap: 8px; padding: 10px 12px; background: #f1faf5; }
+.ax-type { justify-self: start; padding: 2px 10px; border-radius: 8px; background: #dbe8ff; color: #1d4ed8; font-size: 12px; font-weight: 800; }
+.ax-task p { font-size: 13.5px; }
+.ax-update { display: flex; align-items: center; flex-wrap: wrap; gap: 6px; margin-top: 4px; }
+.ax-update span { font-size: 13px; color: #6b7685; }
+.ax-update button { padding: 4px 12px; border: 1px solid #d5dbe1; border-radius: 8px; background: #fff; font-size: 13px; font-weight: 700; }
+.ax-update button.on { border-color: var(--agent); background: var(--agent); color: #fff; }
+
+.ax-feed { flex: 1; display: flex; flex-direction: column; gap: 14px; padding: 12px 16px 20px; }
+.ax-day { align-self: center; padding: 2px 12px; border-radius: 10px; background: #eef1f4; font-size: 12px; color: #6b7685; }
+.ax-msg { display: flex; align-items: flex-start; gap: 10px; }
+.ax-msg.mine { justify-content: flex-end; }
+.ax-bot { display: grid; place-items: center; flex: none; width: 32px; height: 32px; border-radius: 50%; background: #efe7ff; color: #7c3aed; }
+.ax-meta { display: flex; align-items: center; gap: 6px; font-size: 13px; }
+.ax-meta time { font-size: 12.5px; color: #8b95a3; }
+.ax-meta em { padding: 1px 8px; border-radius: 8px; font-style: normal; font-size: 12px; font-weight: 700; }
+.ax-meta .ax-tag { background: #e3ebff; color: #2748b5; }
+.ax-text { margin-top: 2px; font-size: 14px; line-height: 1.4; }
+.ax-msg.mine .ax-meta { justify-content: flex-end; }
+.ax-bubble { margin-top: 2px; padding: 8px 14px; border-radius: 12px; background: #1fa370; color: #fff; font-size: 14px; }
+
+.ax-composer { position: sticky; bottom: 0; display: flex; align-items: center; gap: 10px; padding: 10px 16px; background: #fff; border-top: 1px solid #eee; }
+.ax-composer input { flex: 1; min-width: 0; padding: 10px 14px; border: 1px solid #e3e3e3; border-radius: 22px; font: inherit; font-size: 14px; }
+.ax-send { display: grid; place-items: center; flex: none; width: 40px; height: 40px; border: 0; border-radius: 50%; background: var(--agent); color: #fff; }
+
+@media (max-width: 640px) {
+  .ax-head { flex-wrap: wrap; }
+  .ax-metric { order: 3; }
+}

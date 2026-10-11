@@ -1,0 +1,126 @@
+/*
+  Sizing pass for the shell and the Dashboard.
+  Numbers come from measuring the reference design at a laptop width:
+  sidebar 224px, top bar 54px, headings 15-17px, small labels 11-13px.
+  Loaded after App.css so it only adjusts sizes and spacing.
+*/
+
+body { background: #111; }
+.app-shell { max-width: 1404px; background: #f1f1f6; }
+
+/* ---- sidebar ---- */
+@media (min-width: 901px) {
+  .sidebar { width: 224px; padding: 20px 12px; }
+}
+.brand { margin: 6px 12px 26px; font-size: 16px; font-weight: 700; }
+.navigation { gap: 6px; }
+.nav-item { min-height: 44px; padding: 6px 10px; gap: 12px; border-radius: 12px; font-size: 14.5px; }
+.nav-item.sub-item { min-height: 25px; margin-left: 14px; padding: 3px 10px; font-size: 13.5px; font-weight: 600; }
+.nav-item.sub-item.sub-active { font-weight: 800; }
+.calendar-link { margin-top: 12px; }
+.nav-icon.tile { width: 30px; height: 30px; border-radius: 9px; }
+.nav-icon.plain { width: 18px; }
+
+/* ---- top bar ---- */
+.topbar { height: 54px; padding: 0 16px; gap: 10px; }
+.topbar > strong { font-size: 16px; font-weight: 600; }
+.app-logo { display: grid; place-items: center; width: 28px; height: 28px; padding: 0; border-radius: 8px; font-size: 12px; }
+.topbar-right { gap: 8px; }
+.tb-actions { gap: 8px; }
+.tb-bell { width: 34px; height: 34px; font-size: 14px; }
+.tb-score { gap: 6px; padding: 2px 10px 2px 3px; }
+.tb-ring { width: 30px; height: 30px; }
+.tb-ring-text { font-size: 13px; }
+.tb-rank { font-size: 12.5px; }
+.tb-avatar { display: grid; place-items: center; width: 40px; height: 40px; padding: 0; border-width: 2px; background: #17a37f; }
+.tb-avatar-emoji { font-size: 20px; line-height: 1; }
+.tb-avatar-tag { margin-top: -3px; font-size: 8px; font-weight: 800; line-height: 1; letter-spacing: 0.02em; }
+.tb-wrap { display: flex; align-items: center; gap: 8px; }
+.tb-menu { display: grid; place-items: center; width: 34px; height: 34px; border: 0; border-radius: 8px; background: rgba(255, 255, 255, 0.12); color: #fff; font-size: 16px; line-height: 1; }
+.tb-panel { top: calc(100% + 6px); }
+.tb-profile-avatar { font-size: 22px; }
+.tb-panel.profile .tb-item { font-size: 14px; }
+.menu-button { display: none; }
+
+/* ---- hero + KPI cards ---- */
+.dashboard-header { padding: 16px 16px 14px; gap: 0 16px; }
+.dashboard-header .greeting { margin: 0; font-size: 15.5px; }
+.dashboard-header h1 { margin: 2px 0 0; font-size: 17px; font-weight: 700; }
+.dashboard-header .company { margin: 1px 0 0; font-size: 14px; color: #8b93d9; }
+.header-actions { gap: 6px; }
+.queue-status { padding: 6px 11px; font-size: 14px; background: rgba(52, 211, 153, 0.15); border: 1px solid rgba(52, 211, 153, 0.35); }
+.week-button { padding: 5px 11px; font-size: 13.5px; font-weight: 500; background: rgba(255, 255, 255, 0.1); }
+.stats-grid { gap: 7px; margin-top: 14px; }
+.stat-card { padding: 9px 7px; border-radius: 13px; background: rgba(255, 255, 255, 0.07); border: 1px solid rgba(255, 255, 255, 0.09); }
+.stat-card h2 { margin: 0; font-size: 16px; font-weight: 800; line-height: 1.1; }
+.stat-card p { margin: 4px 0 0; font-size: 11.5px; letter-spacing: 0.3px; line-height: 1.25; color: #9ca3e8; text-transform: uppercase; }
+.stat-card span { display: inline-flex; margin-top: 5px; padding: 1px 6px; border-radius: 7px; font-size: 12.5px; font-weight: 800; }
+
+/* ---- body of the dashboard ---- */
+.dashboard-content { padding: 10px 12px 24px; gap: 12px; }
+.left-column, .right-column { gap: 10px; }
+
+.progress-card { padding: 12px 14px 14px; border-radius: 18px; }
+.progress-card h2, .tasks-card h2 { margin: 0 0 8px; font-size: 12.5px; letter-spacing: 0.04em; text-transform: uppercase; }
+.tasks-card h2 { font-size: 15px; letter-spacing: 0; text-transform: none; }
+.progress-grid { gap: 8px; }
+.progress-grid > div { padding: 9px 6px; border-radius: 12px; }
+.progress-grid strong { font-size: 16px; }
+.progress-grid span { margin: 3px 0; font-size: 12px; }
+.progress-grid p { font-size: 11.5px; font-weight: 700; }
+
+.section-heading { margin-bottom: 6px; }
+.section-heading h2, .chart-section h2 { font-size: 12.5px; letter-spacing: 0.06em; }
+.section-heading a { font-size: 12.5px; }
+
+.caller-card { gap: 10px; margin-bottom: 8px; padding: 6px 12px; border-radius: 12px; }
+.caller-icon { padding: 5px; }
+.caller-info strong { font-size: 14px; line-height: 1.25; }
+.caller-info p { margin: 0; font-size: 12.5px; line-height: 1.25; }
+.wait-time { padding: 4px 9px; font-size: 12.5px; font-weight: 800; }
+
+.earnings-card { padding: 10px 14px 12px; border-radius: 14px; }
+.earnings-heading { font-size: 13px; }
+.earnings-heading span, .earnings-total span { font-size: 12px; }
+.earnings-total { margin: 2px 0 6px; font-size: 26px; }
+.earnings-track { height: 7px; }
+
+.tasks-card { padding: 12px; border-radius: 18px; }
+.tasks-card h2 span { padding: 1px 7px; font-size: 12px; }
+.task-row { gap: 10px; margin-top: 6px; padding: 5px 11px; border-radius: 11px; font-size: 14px; line-height: 1.25; }
+.task-row small { font-size: 12.5px; }
+.task-icon { display: grid; place-items: center; width: 30px; height: 30px; padding: 0; border-radius: 9px; font-size: 14px; }
+.task-arrow { font-size: 18px; }
+
+.chart-section { margin: 12px 0 !important; }
+.chart-section h2 { margin: 0 0 6px; }
+.chart-card { height: 114px; padding: 8px 12px; border-radius: 14px; }
+.chart-section .chart-card { gap: 6px; }
+.bar-column > span, .bar-column small { font-size: 11px; }
+.bar { min-height: 16px; max-width: none; }
+
+/* Keep two columns on narrow laptop windows; stack only on phones. */
+@media (min-width: 601px) and (max-width: 900px) {
+  .dashboard-content { grid-template-columns: 1fr 1fr; }
+  .chart-section { grid-column: 1 / -1; }
+}
+@media (max-width: 600px) {
+  .dashboard-content { grid-template-columns: 1fr; }
+}
+
+/* ---- icons on the Dashboard ---- */
+.week-button { display: inline-flex; align-items: center; gap: 6px; }
+.week-caret { display: inline-grid; transform: rotate(90deg); }
+.caller-icon { display: grid; place-items: center; width: 32px; height: 32px; padding: 0; color: #6b7685; }
+.tasks-card h2 { display: flex; align-items: center; gap: 6px; }
+.task-icon.blue { background: #e3f0fd; color: #2a6fb5; }
+.task-icon.violet { background: #efe7ff; color: #6d3fd1; }
+.task-icon.amber { background: #fdf1d6; color: #b7791f; }
+.task-arrow { display: grid; place-items: center; font-size: 0; color: #a6adba; }
+
+/* ---- score pill: ring opens OG score, star opens rank ---- */
+.tb-score { padding: 0; }
+.tb-score button { display: flex; align-items: center; border: 0; background: none; color: inherit; font: inherit; cursor: pointer; }
+.tb-score-ring { padding: 2px 0 2px 3px; border-radius: 999px 0 0 999px; }
+.tb-score .tb-rank { padding: 0 12px 0 6px; align-self: stretch; border-radius: 0 999px 999px 0; color: #f5c542; font-weight: 700; font-size: 12.5px; }
+.tb-score button:hover { background: rgba(255, 255, 255, 0.08); }

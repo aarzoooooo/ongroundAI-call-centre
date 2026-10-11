@@ -1,0 +1,16 @@
+/* ---------- CSAT chart (reuses .chart-card / .bar-column / .bar) ---------- */
+.csat-card {
+  height: 210px;
+}
+
+.csat-card .bar {
+  background: #93b4f5;
+}
+
+.csat-card .bar-column:last-child .bar {
+  background: #1d5fa8;
+}
+
+.csat-card .bar-column > span {
+  font-weight: 600;
+}

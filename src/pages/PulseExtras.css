@@ -1,0 +1,47 @@
+/* Cards, buttons and toast inside Pulse chats */
+.px-card { margin-top: 8px; padding: 12px; border: 1px solid #e3e8e6; border-radius: 12px; background: #f8faf9; }
+.px-card-head { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+.px-card-head strong { flex: 1; font-size: 14px; }
+.px-card-head em { padding: 2px 8px; border-radius: 8px; background: #dcf3e8; color: #0f6b4f; font-style: normal; font-size: 12px; font-weight: 700; }
+.px-card dl { display: grid; gap: 4px; margin: 0 0 10px; }
+.px-card dl div { display: flex; justify-content: space-between; gap: 12px; font-size: 13px; }
+.px-card dt { color: #6b7685; }
+.px-card dd { margin: 0; font-weight: 700; text-align: right; }
+
+.px-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+.px-actions button { flex: 1; min-width: 120px; padding: 9px 12px; border: 1.5px solid #d9d9e0; border-radius: 9px; background: #fff; color: #3a3a42; font: inherit; font-size: 13px; font-weight: 700; cursor: pointer; }
+.px-actions button.primary { border-color: transparent; background: linear-gradient(135deg, #5b21b6, #7c3aed); color: #fff; }
+
+.px-clip { display: flex; align-items: center; gap: 10px; margin-top: 8px; padding: 10px; border-radius: 10px; background: #0a1a14; color: #fff; }
+.px-clip-play { display: grid; place-items: center; flex: none; width: 36px; height: 36px; border-radius: 50%; background: rgba(255, 255, 255, 0.16); font-size: 13px; }
+.px-clip strong { display: block; font-size: 13px; }
+.px-clip small { display: block; font-size: 12px; color: #9fe1cb; }
+
+.px-sent { margin-top: 8px; padding: 11px; border-radius: 10px; background: #0a1a14; color: #fff; }
+.px-sent small { font-size: 11px; font-weight: 800; letter-spacing: 0.05em; color: #c7d2fe; }
+.px-sent strong { display: block; margin: 3px 0 4px; font-size: 13px; }
+.px-sent p { margin: 0; font-size: 12.5px; line-height: 1.5; color: #c9dcd5; }
+
+.px-toast { position: fixed; left: 50%; bottom: 90px; z-index: 200; transform: translateX(-50%); padding: 10px 16px; border-radius: 20px; background: #0a1a14; color: #fff; font-size: 13.5px; font-weight: 700; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25); }
+
+/* Kudos screen */
+.pk { min-height: calc(100vh - 62px); background: #eceef4; }
+.pk-head { display: flex; align-items: center; gap: 10px; padding: 12px 14px; background: linear-gradient(135deg, #c8860a, #e0a52f); color: #fff; }
+.pk-head button { width: 34px; height: 34px; border: 0; border-radius: 50%; background: rgba(255, 255, 255, 0.2); color: #fff; font-size: 16px; cursor: pointer; }
+.pk-head h1 { margin: 0; font-size: 16px; font-weight: 700; color: #fff; }
+.pk-head p { margin: 0; font-size: 13px; color: #fdf0d5; }
+.pk-body { display: grid; gap: 10px; padding: 12px 14px 30px; }
+.pk-note { margin: 0; padding: 8px 12px; border-radius: 8px; background: #fff3e0; font-size: 13px; font-weight: 500; color: #854d0e; }
+.pk-label { margin: 6px 0 0; font-size: 13px; font-weight: 700; letter-spacing: 0.04em; color: #8e8e93; }
+.pk-card { padding: 12px 14px; border: 1.5px solid; border-radius: 14px; }
+.pk-card.gold { border-color: #ffd700; background: linear-gradient(135deg, #fff8e1, #fff); }
+.pk-card.red { border-color: #fca5a5; background: linear-gradient(135deg, #fef3f2, #fff); }
+.pk-card.green { border-color: #86efac; background: linear-gradient(135deg, #f0fdf4, #fff); }
+.pk-card-top { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+.pk-card-top > div { flex: 1; display: grid; }
+.pk-card-top small { font-size: 13px; color: #8e8e93; }
+.pk-avatar { display: grid; place-items: center; width: 38px; height: 38px; border-radius: 50%; background: #faeeda; color: #854f0b; font-size: 14px; font-weight: 700; }
+.pk-emoji { font-size: 22px; }
+.pk-card blockquote { margin: 0; padding: 8px 10px; border-radius: 8px; background: rgba(255, 255, 255, 0.7); font-size: 14px; line-height: 1.5; }
+.pk-total { margin: 4px 0 0; text-align: center; font-size: 13px; color: #8e8e93; }
+.pk-total b { color: #1d9e75; }

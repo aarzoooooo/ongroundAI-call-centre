@@ -1,0 +1,38 @@
+/* Global base styles. Component sizes are set in App.css and the page stylesheets. */
+:root {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: 0;
+  color: #14221f;
+  background: #f1f1f6;
+  color-scheme: light;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* Low-specificity defaults so any component rule wins. */
+:where(h1, h2, h3, h4) {
+  margin: 0;
+  font-family: inherit;
+  font-weight: 700;
+  letter-spacing: 0;
+  color: inherit;
+}
+
+:where(p) {
+  margin: 0;
+}
