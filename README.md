@@ -4,7 +4,9 @@ A rebuild of the On-Ground.ai call centre agent app, made for the Engineering In
 It is the app an agent keeps open through a shift: dashboard, call plan, calendar and the Pulse team chat.
 
 **Author:** Bar Shaik Aarzoo Nuha
+
 **Live link:** `<add deployed URL>`
+
 **Screen recording (2 min):** `<add link>`
 
 ---
@@ -67,7 +69,7 @@ src/
 - **No chart library.** The charts are hand-written SVG.
 - **Mobile is partial.** There are some responsive rules, but the layouts were tuned for a laptop in Chrome first.
 - **All data is fake.** Calls, messages, LinkedIn posting and the live call do not touch any service.
-- **Some code needs cleaning.** `src/OtherPages.jsx` is an older file that now only serves the Practise page and the 404 page, and it repeats lead data that also lives elsewhere. A few ESLint errors remain. With more time I would split Practise into its own component, move all leads into one data file and fix the lint errors.
+-  **Some code needs cleaning.** `src/OtherPages.jsx` is an older file that now only serves the Practise page and the 404 page, and it repeats lead data that also lives elsewhere. With more time I would split Practise into its own component and move all leads into one data file.
 
 ## AI tools used
 
@@ -75,4 +77,4 @@ I used **Claude** and **ChatGPT** while building this: for scaffolding component
 
 ## Git
 
-I committed as I worked, so the history shows how the app was built.
+The project was built locally and pushed to GitHub at submission time, followed by small cleanup commits.
