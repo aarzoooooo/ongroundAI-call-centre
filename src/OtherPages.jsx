@@ -228,7 +228,6 @@ export default function OtherPages({ title = "Plan" }) {
   const isPlanPage = isCalls || isIncoming || isRecent
 
 
-  const currentLead = leads[leadPage];
 
 
 
