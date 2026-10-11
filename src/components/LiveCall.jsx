@@ -228,6 +228,8 @@ function assistFor(name) {
   )
 }
 
+// SOP is shared sample data; kept here next to the call UI that uses it.
+// eslint-disable-next-line react-refresh/only-export-components
 export const SOP = [
   'Greet and verify the customer’s name',
   'Ask for recording consent',
@@ -296,6 +298,7 @@ function useCallSession() {
 
 const CallContext = createContext(null)
 
+// eslint-disable-next-line react-refresh/only-export-components
 export function useCall() {
   return useContext(CallContext)
 }
