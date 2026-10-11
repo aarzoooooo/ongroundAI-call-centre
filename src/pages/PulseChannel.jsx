@@ -74,8 +74,7 @@ function ChannelView({ channel, openLead }) {
     requestAnimationFrame(() => endRef.current?.scrollIntoView({ behavior: 'smooth', block: 'end' }))
 
   const addMine = (text) => {
-    const message = { id: Date.now(), from: 'You', initials: 'AR', time: timeNow(), text, mine: true }
-    setMessages((prev) => [...prev, message])
+    setMessages((prev) => [...prev, myMessage(text)])
     scrollToEnd()
   }
 
