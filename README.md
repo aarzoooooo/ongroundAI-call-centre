@@ -5,7 +5,7 @@ It is the app an agent keeps open through a shift: dashboard, call plan, calenda
 
 **Author:** Bar Shaik Aarzoo Nuha
 
-**Live link:** `https://onground-ai-call-centre.vercel.app/calendar`
+**Live link:** `https://onground-ai-call-centre.vercel.app`
 
 **Screen recording (2 min):** `<add link>`
 
